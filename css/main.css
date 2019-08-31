@@ -678,6 +678,10 @@ html[dir=ltr] .xs-nav .lang {
   font-size: 12px;
 }
 
+html[dir=ltr] .new .overlay {
+  justify-content: flex-end;
+}
+
 .side-bar .mo-accordion {
   cursor: pointer;
   min-width: 100%;
