@@ -1,0 +1,243 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    .anchor {
+        position: absolute;
+        z-index: 5;
+        background-color: transparent;
+        display: block;
+        width: 100%;
+        height: 65%;
+        top: 0;
+        right: 0;
+    }
+
+    // .anchor {
+    //     position: absolute;
+    //     z-index: 5;
+    //     border-radius: 50%;
+    //     background-color: transparent;
+    //     display: block;
+    //     width: 27%;
+    //     height: 45%;
+    //     top: 15%;
+    //     right: 11%;
+    // }
+}
+
+.about {
+
+    .about-heder {
+        font-family: Frutiger-black;
+        color: $thirdcolor;
+        font-size: 25px;
+        margin-top: 43px;
+        margin-bottom: 24px;
+    }
+
+    .about-txt {
+        max-width: 581.257px;
+        font-size: 17px;
+        color: $thirdcolor;
+        font-family: Frutiger-light;
+        line-height: 2;
+        margin-bottom: 15px;
+
+        @media (max-width:991px) {
+            max-width: none;
+        }
+
+        @media (max-width:767px) {
+            text-align: justify;
+        }
+    }
+
+    .about-img {
+        position: relative;
+        height: 367px;
+
+        @media (max-width:991px) {
+            height: auto;
+        }
+    }
+
+    .place-img {
+        z-index: 2;
+        max-width: 494px;
+        max-height: 494px;
+        position: absolute;
+        top: -127px;
+        left: 0;
+
+        img {
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        @media (max-width:991px) {
+            max-width: none;
+            max-height: none;
+            width: 100%;
+            height: auto;
+            position: static;
+        }
+    }
+
+    .readmore {
+        font-size: 14px;
+        color: #b2b2b2;
+        font-family: Frutiger-light;
+        display: inline-block;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+}
+
+html[dir="ltr"] .about {
+
+    .place-img {
+        top: 0;
+        left: auto;
+        right: 0;
+
+        img {
+            border-radius: 50%;
+            margin: auto;
+        }
+    }
+
+
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    padding-top: 145px;
+    padding-bottom: 156px;
+
+    @media (max-width:767px) {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .overlay {
+        z-index: -1;
+        background-size: cover;
+        top: -70px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("../images/curve-white.png");
+
+        @media (max-width:1199px) {
+            top: -30px
+        }
+
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+
+    .gallery-heder {
+        z-index: 9;
+        font-family: Frutiger-black;
+        color: $thirdcolor;
+        font-size: 24px;
+        display: inline-block;
+        margin-left: 40px;
+
+
+    }
+
+    .seemore {
+        font-family: Frutiger-bold;
+        color: #cacaca;
+        font-size: 14px;
+        display: inline-block;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+}
+
+html[dir="ltr"] .gallery {
+    .gallery-heder {
+        margin-right: 40px;
+        margin-left: 0;
+
+    }
+}
+
+.gallery-cont {
+    display: flex;
+    margin-top: 42px;
+
+    .gallery-item {
+        margin-bottom: 28px;
+        display: block;
+        overflow: hidden;
+
+        img {
+            @include transition(all 0.3s ease-in-out);
+
+            @media (max-width:767px) {
+                margin: auto;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2) rotate(5deg);
+
+                @media (max-width:767px) {
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    .gallery-video {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '\f144';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 400;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: #fff;
+            cursor: pointer;
+            text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+
+
+.map {
+    background-color: $maincolor;
+    position: relative;
+    height: 321px;
+    direction: ltr;
+    margin-top: 103px;
+
+    @media (max-width:767px) {
+        margin-top: 50px;
+    }
+}

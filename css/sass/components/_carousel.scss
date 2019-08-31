@@ -1,0 +1,98 @@
+.news {
+    margin-top: -6px;
+}
+
+.news-header-div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 34px;
+
+    .news-heder {
+        z-index: 9;
+        font-family: Frutiger-black;
+        color: $thirdcolor;
+        font-size: 24px;
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    .seemore {
+        font-family: Frutiger-bold;
+        color: #cacaca;
+        font-size: 14px;
+        display: inline-block;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+}
+
+.new {
+    display: block;
+    position: relative;
+    max-width: 555px;
+    max-height: 306px;
+    overflow: hidden;
+
+    @media (max-width:992px) {
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+
+        @media (max-width:767px) {
+            height: 100%;
+        }
+    }
+
+    .overlay {
+        background-color: rgba(60, 60, 60, 0.902);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 56px;
+        display: flex;
+        align-items: center;
+    }
+
+    .new-header {
+        font-family: Frutiger-bold;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 29px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $seccolor;
+        }
+    }
+
+}
+
+.date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba($maincolor, $alpha: 0.85);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .day {
+        font-family: Frutiger-bold;
+        font-size: 18px;
+    }
+
+    .mounth {
+        font-size: 12px;
+    }
+}
