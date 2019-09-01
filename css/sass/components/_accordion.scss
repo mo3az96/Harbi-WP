@@ -48,17 +48,18 @@ html[dir="ltr"] .side-bar {
 .footer {
     .mo-accordion {
         cursor: pointer;
-        min-width: 100%;
         transition: 0.4s;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 40%;
+        margin: auto;
 
         &:after {
             content: '\f078';
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
-            margin-left: 10px;
+            margin-left: 30px;
             font-size: 10px;
             color: $thirdcolor;
         }

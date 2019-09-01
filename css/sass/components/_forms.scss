@@ -47,7 +47,9 @@
         padding: 0 34px;
     }
 
-
+    @media (max-width:767px) {
+        background-color: #fff;
+    }
 
 }
 
@@ -116,7 +118,7 @@ html[dir="ltr"] .searchbtn {
 
     .closebtn {
         position: absolute;
-        color: $seccolor;
+        color: #fff;
         top: 50px;
         left: 50%;
         transform: translateX(-50%);

@@ -39,6 +39,10 @@
         font-size: 25px;
         margin-top: 43px;
         margin-bottom: 24px;
+
+        @media (max-width:767px) {
+            text-align: center;
+        }
     }
 
     .about-txt {
@@ -108,6 +112,11 @@
         &:hover {
             color: $seccolor;
         }
+
+        @media (max-width:767px) {
+            text-align: center;
+            display: block;
+        }
     }
 }
 
@@ -163,7 +172,7 @@ html[dir="ltr"] .about {
         align-items: center;
 
         @media (max-width:767px) {
-            justify-content: space-between;
+            justify-content: center;
         }
     }
 
@@ -175,6 +184,9 @@ html[dir="ltr"] .about {
         display: inline-block;
         margin-left: 40px;
 
+        @media (max-width:767px) {
+            margin-left: 0;
+        }
 
     }
 
@@ -187,6 +199,18 @@ html[dir="ltr"] .about {
 
         &:hover {
             color: $seccolor;
+        }
+
+        @media (max-width:767px) {
+            display: none;
+        }
+
+        &.seemore-xs {
+            display: none;
+
+            @media (max-width:767px) {
+                display: block;
+            }
         }
     }
 }

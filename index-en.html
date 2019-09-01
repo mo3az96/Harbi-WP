@@ -29,7 +29,10 @@
         <ul class="fixall header-nav list-unstyled">
           <li class="link-li fixall"><a href="#" class="link fixall">Home</a></li>
           <li class="link-li fixall"><a href="#" class="link fixall">About Us</a></li>
-          <li class="link-li fixall"><a href="#" class="link fixall store">Store</a></li>
+          <li class="link-li fixall store">
+            <a href="#" class="link fixall store">Store</a>
+            <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+          </li>
           <li class="link-li fixall"><a href="#" class="link fixall">Gallery</a></li>
           <li class="link-li fixall"><a href="#" class="link fixall">News</a></li>
           <li class="link-li fixall"><a href="#" class="link fixall">Contact Us</a></li>
@@ -91,10 +94,15 @@
   <!-- Start About Us -->
   <div class="about">
     <div class="container">
+      <h1 class="about-heder fixall">AL Harbi Stores</h1>
       <div class="row">
+        <div class="hidden-lg hidden-md hidden-sm col-xs-12 about-img">
+          <div class="place-img" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine"><img
+              src="images/info.jpg" class="img-responsive"></div>
+        </div>
         <div class="col-md-6">
           <div class="txt" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-            <h1 class="about-heder fixall">AL Harbi Stores</h1>
+
             <p class="about-txt fixall">There are many types available for Lorim Epsom texts, but the majority have been
               modified in a What by entering some anecdotes or random words into the text. If you want to use lorim
               epsom
@@ -104,7 +112,7 @@
             <a href="#" class="readmore fixall">Read More</a>
           </div>
         </div>
-        <div class="col-md-6 about-img">
+        <div class="col-md-6 about-img hidden-sm hidden-xs">
           <div class="place-img" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine"><img
               src="images/info.jpg" class="img-responsive"></div>
         </div>
@@ -131,7 +139,7 @@
               <img src="images/galleryimg1.jpg" class="img-responsive">
             </a>
           </div>
-          <div class="col-sm-3 col-xs-12">
+          <div class="col-sm-3 hidden-xs">
             <a data-fancybox="gallery" href="images/galleryimg2.jpg" class="gallery-item gallery-img"
               data-aos="fade-down" data-aos-duration="1000">
               <img src="images/galleryimg2.jpg" class="img-responsive">
@@ -151,7 +159,7 @@
               <img src="images/galleryimg3.jpg" class="img-responsive">
             </a>
           </div>
-          <div class="col-sm-3 col-xs-12">
+          <div class="col-sm-3 hidden-xs">
             <a data-fancybox="gallery" href="images/galleryimg4.jpg" class="gallery-item gallery-img"
               data-aos="fade-down" data-aos-duration="1000">
               <img src="images/galleryimg4.jpg" class="img-responsive">
@@ -161,7 +169,8 @@
               <img src="images/galleryvideo4.jpg" class="img-responsive">
             </a>
           </div>
-
+          <div class="hidden-lg hidden-md hidden-sm col-xs-12"><a href="#" class="seemore fixall seemore-xs">See
+              more</a></div>
         </div>
       </div>
     </div>
@@ -203,6 +212,7 @@
           </div>
         </div>
       </div>
+      <a href="#" class="seemore fixall seemore-xs">See More</a>
     </div>
   </div>
   <!-- End News -->
