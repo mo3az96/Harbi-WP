@@ -584,6 +584,33 @@ html[dir=ltr] .xs-nav .lang {
 .news {
   margin-top: -6px;
 }
+.news .owl-dots {
+  margin-top: 20px;
+  text-align: center;
+}
+.news .owl-dots .owl-dot {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.news .owl-dots .owl-dot span {
+  display: block;
+  margin: 0 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.news .owl-dots .owl-dot span:hover {
+  background: #f12f2f;
+}
+.news .owl-dots .owl-dot.active span {
+  background: #f12f2f;
+}
 
 .news-header-div {
   display: flex;

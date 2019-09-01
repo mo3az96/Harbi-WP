@@ -1,5 +1,36 @@
 .news {
     margin-top: -6px;
+
+    .owl-dots {
+        margin-top: 20px;
+        text-align: center;
+
+        .owl-dot {
+            outline: none;
+            box-shadow: none;
+            border: none;
+
+            span {
+                display: block;
+                margin: 0 4px;
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                background: rgba(#000000, 0.5);
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    background: rgba($seccolor, 1);
+                }
+            }
+
+            &.active {
+                span {
+                    background: rgba($seccolor, 1);
+                }
+            }
+        }
+    }
 }
 
 .news-header-div {

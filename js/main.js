@@ -150,22 +150,20 @@ $(document).ready(function () {
         dots: false,
         responsive: {
             0: {
-                nav: false,
                 dots: true,
                 items: 1,
             },
             500: {
                 items: 1,
-                nav: false,
                 dots: true,
             },
             768: {
                 items: 1,
-                nav: false,
+                dots: false,
             },
             992: {
                 items: 2,
-                nav: false,
+                dots: false,
             },
         }
     });
