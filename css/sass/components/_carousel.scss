@@ -8,7 +8,7 @@
     justify-content: space-between;
     margin-bottom: 34px;
 
-    .news-heder {
+    .news-header {
         z-index: 9;
         font-family: Frutiger-black;
         color: $thirdcolor;
@@ -37,12 +37,14 @@
     max-height: 306px;
     overflow: hidden;
 
+
     @media (max-width:992px) {
         margin-bottom: 20px;
     }
 
     img {
         width: 100%;
+        @include transition(all 0.3s ease-in-out);
 
         @media (max-width:767px) {
             height: 100%;
@@ -72,6 +74,12 @@
         }
     }
 
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
 }
 
 .date {
@@ -85,6 +93,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 99;
     justify-content: center;
 
     .day {

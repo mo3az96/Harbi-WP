@@ -591,7 +591,7 @@ html[dir=ltr] .xs-nav .lang {
   justify-content: space-between;
   margin-bottom: 34px;
 }
-.news-header-div .news-heder {
+.news-header-div .news-header {
   z-index: 9;
   font-family: Frutiger-black;
   color: #3c3c3c;
@@ -627,6 +627,10 @@ html[dir=ltr] .xs-nav .lang {
 }
 .new img {
   width: 100%;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
   .new img {
@@ -656,6 +660,9 @@ html[dir=ltr] .xs-nav .lang {
 .new .new-header:hover {
   color: #f12f2f;
 }
+.new:hover img {
+  transform: scale(1.1);
+}
 
 .date {
   position: absolute;
@@ -668,6 +675,7 @@ html[dir=ltr] .xs-nav .lang {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 99;
   justify-content: center;
 }
 .date .day {
@@ -881,10 +889,19 @@ html[dir=ltr] .main-bar .lang {
   position: absolute;
   top: -127px;
   left: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.about .place-img:hover img {
+  transform: scale(1.1);
 }
 .about .place-img img {
   border-radius: 50%;
   margin: auto;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 991px) {
   .about .place-img {
