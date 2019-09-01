@@ -139,28 +139,6 @@ $(document).ready(function () {
         }
     })(marker));
 
-    // for (i = 0; i < location.length; i++) {
-    //     marker = new google.maps.Marker({
-    //         position: new google.maps.LatLng(location[i][1], location[i][2]),
-    //         map: map,
-    //         icon: 'images/pin.png',
-
-    //     });
-
-    //     google.maps.event.addListener(marker, 'click', (function (marker, i) {
-    //         return function () {
-    //             infowindow.setContent(location[i][0]);
-    //             infowindow.open(map, marker);
-    //         }
-    //     })(marker, i));
-    // }
-
-    var arr = [1, 2, 3];
-    var j;
-    for (j = 0; j < arr.length; j++) {
-        console.log(arr[j]);
-    }
-
     ////////////////////////////////////////////
     $('.news-slider').owlCarousel({
         items: 2,
