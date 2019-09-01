@@ -128,6 +128,8 @@ $(document).ready(function () {
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(location[1], location[2]),
         map: map,
+        icon: ' ',
+
     });
 
     google.maps.event.addListener(marker, 'click', (function (marker, i) {
