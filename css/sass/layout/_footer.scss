@@ -161,7 +161,15 @@ html[dir="ltr"] .social-link {
     margin-right: 8px;
 }
 
-
+.foot-logo-cont {
+    a {
+        @media (max-width:767px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
 
 .copyright {
     font-size: 13px;

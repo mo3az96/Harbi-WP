@@ -1227,6 +1227,14 @@ html[dir=ltr] .social-link {
   margin-right: 8px;
 }
 
+@media (max-width: 767px) {
+  .foot-logo-cont a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .copyright {
   font-size: 13px;
   color: #8c8c8c;
