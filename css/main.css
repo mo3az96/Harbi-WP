@@ -969,6 +969,15 @@ html[dir=ltr] .about .place-img img {
     display: none;
   }
 }
+.gallery .galley-hearder-div {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .gallery .galley-hearder-div {
+    justify-content: space-between;
+  }
+}
 .gallery .gallery-heder {
   z-index: 9;
   font-family: Frutiger-black;
