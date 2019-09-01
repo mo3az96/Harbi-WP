@@ -67,37 +67,21 @@ html[dir="ltr"] .main-bar {
     position: relative;
 
     .cart-icon {
-        background-color: $seccolor;
-        padding: 5px;
-        color: #fff;
+        background-color: transparent;
+        color: $seccolor;
         position: absolute;
         border-radius: 5px;
         left: 50%;
         transform: translateX(-50%);
-        top: -35px;
-        visibility: hidden;
-        opacity: 0;
-        @include transition(all 0.3s ease-in-out);
-
-        &:after {
-            content: "";
-            width: 0;
-            height: 0;
-            display: block;
-            border-width: 6px;
-            border-color: $seccolor transparent transparent;
-            border-style: solid;
-            bottom: -12px;
-            position: absolute;
-            right: 50%;
-            transform: translateX(50%);
-        }
+        top: 0;
+        @include transition(all 0.2s ease-in-out);
+        font-size: 16px;
+        z-index: 5;
     }
 
     &:hover {
         .cart-icon {
-            visibility: visible;
-            opacity: 1;
+            top: -25px;
         }
     }
 }

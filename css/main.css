@@ -482,6 +482,8 @@ html[dir=ltr] .searchbtn {
 .header-nav .link.store {
   color: #f12f2f;
   font-family: Frutiger-bold;
+  z-index: 10;
+  background-color: #fff;
 }
 .header-nav .link:hover {
   color: #f12f2f;
@@ -891,37 +893,22 @@ html[dir=ltr] .main-bar .lang {
   position: relative;
 }
 .store .cart-icon {
-  background-color: #f12f2f;
-  padding: 5px;
-  color: #fff;
+  background-color: transparent;
+  color: #f12f2f;
   position: absolute;
   border-radius: 5px;
   left: 50%;
   transform: translateX(-50%);
-  top: -35px;
-  visibility: hidden;
-  opacity: 0;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.store .cart-icon:after {
-  content: "";
-  width: 0;
-  height: 0;
-  display: block;
-  border-width: 6px;
-  border-color: #f12f2f transparent transparent;
-  border-style: solid;
-  bottom: -12px;
-  position: absolute;
-  right: 50%;
-  transform: translateX(50%);
+  top: 0;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  z-index: 5;
 }
 .store:hover .cart-icon {
-  visibility: visible;
-  opacity: 1;
+  top: -25px;
 }
 
 .slider {
@@ -1033,7 +1020,6 @@ html[dir=ltr] .main-bar .lang {
 }
 
 html[dir=ltr] .about .place-img {
-  top: 0;
   left: auto;
   right: 0;
 }
